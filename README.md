@@ -1,18 +1,18 @@
 # Client for License Plate Identification System in Real-time [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://robertlucian.mit-license.org)
 
+**READ THIS: This is a client for 3 (YOLOv3, CRAFT text detector, CRNN text recognizer) [cortex](https://github.com/cortexlabs/cortex)-deployed ML models. This client only works in conjunction with [this cortex APIs](https://github.com/cortexlabs/cortex/tree/master/examples/tensorflow/license-plate-reader).** 
+
 ![Imgur](https://i.imgur.com/jgkJB59.gif)
 
 *- The above GIF was taken from [this video](https://www.youtube.com/watch?v=gsYEZtecXlA) of whose predictions were computed on the fly with cortex/AWS -*
 
-**READ THIS: This is a client for 3 (YOLOv3, CRAFT text detector, CRNN text recognizer) [cortex](https://github.com/cortexlabs/cortex)-deployed ML models. This client only works in conjunction with [this cortex APIs](https://github.com/cortexlabs/cortex/tree/master/examples/tensorflow/license-plate-reader).** 
+This app which uses the deployed cortex APIs as a PaaS captures the frames from a video camera, sends them for inferencing to the cortex APIs, recombines them after the responses are received and then the detections/recognitions are overlayed on the output stream. This is done on the car's dashcam (composed of the Raspberry Pi + GSM module) in real-time. Access to the internet is provided through the GSM module's 4G connection. 
 
-This app which uses the deployed cortex APIs as a PaaS captures the frames from a video camera, sends them for inferencing to the cortex APIs, recombines them after the responses are received and then the detections/recognitions are overlayed on the output stream.
-
-The app must be configured to use the API endpoints as shown when calling `cortex get yolov3` and `cortex get crnn`.
+The app must be configured to use the API endpoints as shown when calling `cortex get yolov3` and `cortex get crnn`. Checkout how the APIs are defined in [their repository](https://github.com/cortexlabs/cortex/tree/master/examples/tensorflow/license-plate-reader).
 
 The app also saves a `csv` file containing the dates and GPS coordinates of each identified license plate.
 
-The observable latency between capturing the frame and broadcasting the predictions in the browser (with all the inference stuff going on) takes about 0.5-0.7 seconds.
+The observable latency between capturing the frame and broadcasting the predictions in the browser (with all the inference stuff going on) takes about *0.5-0.7 seconds*.
 
 To learn more about how the actual device was constructed, check out [this](https://www.robertlucian.com/2020/02/12/real-time-license-plate-identification/) article.
 
