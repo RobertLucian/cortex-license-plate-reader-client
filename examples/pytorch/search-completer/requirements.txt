@@ -1,3 +1,0 @@
-torch
-regex
-tqdm

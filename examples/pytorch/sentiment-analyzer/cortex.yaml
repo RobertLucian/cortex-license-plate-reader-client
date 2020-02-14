@@ -1,8 +1,0 @@
-# WARNING: you are on the master branch, please refer to the examples on the branch that matches your `cortex version`
-
-- name: analyzer
-  predictor:
-    type: python
-    path: predictor.py
-  compute:
-    cpu: 1
