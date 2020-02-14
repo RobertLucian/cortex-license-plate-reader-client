@@ -1,6 +1,10 @@
-# Client for License Plate Identification System
+# Client for License Plate Identification System [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://robertlucian.mit-license.org)
 
-This app which uses the deployed APIs as a PaaS captures the frames from a video camera, sends them for inferencing to the cortex APIs, recombines them after the responses are received and then the detections/recognitions are overlayed on the output stream.
+![Imgur](https://i.imgur.com/jgkJB59.gif)
+
+**READ THIS: This is a client for 3 (YOLOv3, CRAFT text detector, CRNN text recognizer) [cortex](https://github.com/cortexlabs/cortex)-deployed ML models. This client only works in conjunction with [this cortex APIs](https://github.com/cortexlabs/cortex/tree/master/examples/tensorflow/license-plate-reader).** 
+
+This app which uses the deployed cortex APIs as a PaaS captures the frames from a video camera, sends them for inferencing to the cortex APIs, recombines them after the responses are received and then the detections/recognitions are overlayed on the output stream.
 
 The app must be configured to use the API endpoints as shown when calling `cortex get yolov3` and `cortex get crnn`.
 
