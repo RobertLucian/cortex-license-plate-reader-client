@@ -1,6 +1,6 @@
 # Client for License Plate Identification in Real-time on AWS w/ Cortex [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://robertlucian.mit-license.org)
 
-**READ THIS: This is a client for 3 (YOLOv3, CRAFT text detector, CRNN text recognizer) [cortex](https://github.com/cortexlabs/cortex)-deployed ML models. This client only works in conjunction with [this cortex APIs](https://github.com/cortexlabs/cortex/tree/master/examples/tensorflow/license-plate-reader).** 
+**READ THIS: This is a client for 3 (YOLOv3, CRAFT text detector, CRNN text recognizer) [cortex](https://github.com/cortexlabs/cortex)-deployed ML models. This client only works in conjunction with [these cortex APIs](https://github.com/cortexlabs/cortex/tree/master/examples/tensorflow/license-plate-reader).** 
 
 ![Imgur](https://i.imgur.com/jgkJB59.gif)
 
