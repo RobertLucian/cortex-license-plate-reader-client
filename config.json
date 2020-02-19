@@ -1,13 +1,13 @@
 {
     "video_source": {
         "type": "file",
-        "input": "/Users/robert/Dropbox/Projects/cortex/license-plate-detector/recordings/mp4/airport_ride_480p.mp4",
+        "input": "airport_ride_480p.mp4",
         "scale_video": 1.0,
         "frames_to_skip": 0,
         "framerate": 30
     },
     "broadcaster": {
-        "target_buffer_size": 5,
+        "target_buffer_size": 10,
         "max_buffer_size_variation": 5,
         "max_fps_variation": 15,
         "target_fps": 30,
@@ -24,7 +24,7 @@
         "api_endpoint_crnn": "http://a23893c574c0511ea9f430a8bed50c69-1100298247.eu-central-1.elb.amazonaws.com/crnn"
     },
     "inferencing_pool": {
-        "workers": 20,
+        "workers": 24,
         "pick_every_nth_frame": 1
     },
     "flusher": {
