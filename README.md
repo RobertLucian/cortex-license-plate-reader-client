@@ -30,6 +30,8 @@ Target machine **1**: Raspberry Pi.
 
 Target machine **2**: Any x86 machine.
 
+---
+
 The app's primary target machine is the *Raspberry Pi* (3/3B+/4) - the Raspberry Pi is a small embedded computer system that got adopted by many hobbyists and institutions all around the world as the de-facto choice for hardware/software experiments.
 
 Unfortunately for the Raspberry Pi, the $35 pocket-sized computer, doesn't have enough oomph (far from it) to do any inference: not only it doesn't have enough memory to load a model, but should it have enough RAM, it would still take dozens of minutes just to get a single inference. Let alone run inferences at 30 FPS, with a number of inferences for each frame.
