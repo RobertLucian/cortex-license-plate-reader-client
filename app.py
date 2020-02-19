@@ -297,6 +297,7 @@ def main(config):
         # serve each frame to the workers iteratively
         last_log = time.time()
         for i in range(nb_frames):
+            start = time.time()
             try:
                 # write frame to queue
                 _, frame = video_reader.read()
@@ -307,6 +308,12 @@ def main(config):
             except Exception as error:
                 logger.error("unexpected error occurred", exc_info=True)
                 break
+            end = time.time()
+            spent = end - start
+            left = period - spent
+            if left > 0:
+                # maintain framerate
+                time.sleep(period)
 
             # check if SIGINT has been sent
             if killer.kill_now:
