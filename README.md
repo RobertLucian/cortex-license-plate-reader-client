@@ -69,6 +69,8 @@ The configuration file can be in this form
         // "sensor_mode": 5
         // where to save camera's output; applicable just for "camera" type
         // "output_file": "recording.h264"
+        // resolution of the input video; applicable just for the "camera" type
+        // "resolution": [480, 270]
     },
     "broadcaster": {
         // when broadcasting, a buffer is required to provide framerate fluidity; measured in frames
@@ -158,7 +160,7 @@ python app.py -c config.json
 
 Once it's running, you can head off to its browser page to see the live broadcast with its predictions overlayed on top.
 
-To save the broascasted MJPEG stream, you can run the following command
+To save the broascasted MJPEG stream, you can run the following command (check the broadcast serve address in the `config.json` file)
 
 ```bash
 PORT=8000
