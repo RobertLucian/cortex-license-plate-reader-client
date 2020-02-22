@@ -22,7 +22,7 @@ The observable latency between capturing the frame and broadcasting the predicti
 * Internet connection bandwidth and latency.
 * Broadcast buffer size. To get a smoother stream, use a higher buffer size (*10-30*) or if you want the stream to be displayed as quickly as possible but with possible dropped frames, go with lower values (*<10*).
 
-To learn more about how the actual device was constructed, check out [this](https://www.robertlucian.com/2020/02/12/real-time-license-plate-identification/) article.
+To learn more about how the actual device was constructed, check out [this](https://towardsdatascience.com/i-built-a-diy-license-plate-reader-with-a-raspberry-pi-and-machine-learning-7e428d3c7401) article.
 
 ## Target Machine
 
@@ -195,4 +195,4 @@ To create your own Raspberry Pi-powered device to record and display the predict
 Without convoluting this README too much:
 
 * Here are the [STLs/SLDPRTs/Renders](https://www.dropbox.com/sh/fw16vy1okrp606y/AAAwkoWXODmoaOP4yR-z4T8Va?dl=0) to the car's 3D printed support.
-* Here's an [article](https://www.robertlucian.com/2020/02/12/real-time-license-plate-identification/) that talks about this in full detail.
+* Here's an [article](https://towardsdatascience.com/i-built-a-diy-license-plate-reader-with-a-raspberry-pi-and-machine-learning-7e428d3c7401) that talks about this in full detail.
